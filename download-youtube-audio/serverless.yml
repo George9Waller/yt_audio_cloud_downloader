@@ -1,0 +1,18 @@
+service: download-youtube-audio
+
+provider:
+  name: aws
+  stage: ${opt:stage, 'prod'}
+  region: ${env:AWS_REGION, 'eu-west-2'}
+  ecr:
+    images:
+      img:
+        path: ./
+        platform: linux/amd64
+
+functions:
+  demo:
+    timeout: 300
+    memorySize: 512
+    image:
+      name: img

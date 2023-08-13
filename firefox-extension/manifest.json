@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Downloader",
+    "version": "1.0",
+    "description": "Triggers downloads of audio for YouTube videos.",
+    "homepage_url": "https://github.com/george9Waller/yt_audio_cloud_downloader",
+    "icons": {
+        "64": "icons/64.ico"
+    },
+    "permissions": ["activeTab"],
+    "browser_action": {
+        "default_icon": "icons/64.ico",
+        "default_title": "Downloader",
+        "default_popup": "popup/trigger_download.html"
+    }
+}
